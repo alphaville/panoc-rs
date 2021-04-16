@@ -7,12 +7,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 Note: This is the Changelog file of `opengen` - the Python interface of OpEn
 
-## [0.6.5] - 2020-10-21
+## [Unreleased]
+
+### Added
+
+* `# Safety` section in unsafe auto-generated Rust code
+
+### Removed 
+
+* Unnecessary `#[no_mangle]`s in auto-generated Rust code
+
+
+## [0.6.5] - 2020-04-16
 
 ### Changed
 
 * Include `VERSION` file in `MANIFEST.in` (included in Python package)
-
 
 
 ## [0.6.4] - 2020-10-21
@@ -24,6 +34,7 @@ Note: This is the Changelog file of `opengen` - the Python interface of OpEn
 ### Fixed
 
 * List of authors in `Cargo.toml` is generated properly
+* Fixed bug when curvature is zero
 
 ### Changed
 
@@ -99,6 +110,7 @@ Note: This is the Changelog file of `opengen` - the Python interface of OpEn
 * Project-specific `tcp_iface` TCP interface
 * Fixed `lbfgs` typo
 
+[Unreleased]: https://github.com/alphaville/optimization-engine/compare/master...opengen-0.6.5
 [0.6.5]: https://github.com/alphaville/optimization-engine/compare/opengen-0.6.4...opengen-0.6.5
 [0.6.4]: https://github.com/alphaville/optimization-engine/compare/opengen-0.6.3...opengen-0.6.4
 [0.6.3]: https://github.com/alphaville/optimization-engine/compare/opengen-0.6.2...opengen-0.6.3
